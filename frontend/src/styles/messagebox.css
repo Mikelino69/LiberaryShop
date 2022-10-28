@@ -1,0 +1,21 @@
+.message-container {
+  min-height: 100vh;
+  padding-top: 30px;
+  border: 1px solid green;
+}
+
+.message {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #b31616;
+  /* color: #ff0000; */
+}
+
+.messageLoading {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #6b1c1c;
+  /* color: #000000; */
+}

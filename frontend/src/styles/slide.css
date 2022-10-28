@@ -1,0 +1,56 @@
+.Slide {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  color: #fff;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+}
+.cardS {
+  border: 1px solid rgb(250, 110, 16);
+  box-shadow: 2px 2px 3px 5px rgb(241, 122, 42);
+  background-color: rgb(255, 102, 0);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 500px;
+}
+.cardS-top > h1 {
+  font-size: 1rem;
+  margin: 10px 20px;
+}
+.cardS-bottom > h1 {
+  font-size: 2rem;
+}
+.cardS-top > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cardS-bottom {
+  margin: 10px 20px;
+}
+
+.categoryS {
+  position: relative;
+}
+
+.categoryS::before {
+  content: "";
+  background: #d3ad7f;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  right: 0;
+  height: 2px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(219, 189, 189) !important;
+}

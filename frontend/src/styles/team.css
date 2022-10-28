@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,200;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Oswald:wght@200;300;400;500;700&family=Poppins:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.teamHero {
+  text-align: center;
+  margin-top: 4rem;
+  min-height: 53vh;
+  background: linear-gradient(
+    #fff,
+    rgb(255, 102, 0) 45%,
+    #f3c429 45%,
+    #fff 45%,
+    #fff 100%
+  );
+}
+.containerTeam {
+  width: 80%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px 20px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardTeam {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.imgBxTeam {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  transform: translateY(30px) scale(0.5);
+  transform-origin: top;
+}
+.imgBxTeam img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contentTeam {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+.contentTeam .detailsTeam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.contentTeam .detailsTeam .h2Team {
+  color: #444;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.contentTeam .detailsTeam .h2Team .spanTeam {
+  font-size: 0.7em;
+  color: rgb(255, 102, 0);
+  font-weight: 400;
+}
+
+.sci {
+  position: relative;
+  display: flex;
+  margin-top: 5px;
+}
+
+.sci li {
+  list-style: none;
+  margin: 4px;
+}
+
+.sci li a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1.25em;
+  color: #444;
+  text-decoration: none;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+.sci li a:hover {
+  background: rgb(255, 102, 0);
+  color: #fff;
+}
+
+/* media */
+@media (max-width: 768px) {
+  .teamHero {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    min-height: 90vh;
+  }
+  .containerTeam {
+    width: 60%;
+  }
+  .cardTeam {
+    height: 500px;
+  }
+  .sci {
+    width: 10%;
+    margin-left: 15%;
+  }
+  .sci li {
+    margin: 0px;
+  }
+}
